@@ -2,7 +2,6 @@
 	/*
 		Enunciado:
 		Desarrolle la tabla de Sumar, Restar, Multiplicar y Dividir de un N número
-		
 	*/
 	//Declaración de Variables (Entrada):
 		$num = rand(1,50);
