@@ -1,5 +1,14 @@
 <?php
-	//
+	/*
+		Si a > b entonces:
+		Escribir: "A es el ganador" agregando la diferencia entre ambos
+		Si no:
+		Escribir: "B es el ganador" agregando la diferencia entre ambos
+	*/
+	//Declarar mis Variables:
+	$a = rand(0,500);
+	$b = rand(0,500);
+	$diferencia = 0;
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -11,7 +20,21 @@
 	</head>
 	<body>
 		<?php
-			//
+			if ($a > $b) {
+				//Si se cumple la condición.
+				//realizará esto
+				$diferencia = $a - $b;
+				echo "El valor de A es: ".$a." puntos<br>";
+				echo "El valor de B es: ".$b." puntos<br>";
+				echo "A es el ganador, por: ".$diferencia." puntos";
+			}else{
+				//Si no se cumple la condición.
+				//realizará esto
+				$diferencia = $b - $a;
+				echo "El valor de B es: ".$b." puntos<br>";
+				echo "El valor de A es: ".$a." puntos<br>";
+				echo "B es el ganador, por: ".$diferencia." puntos";
+			}
 		?>
 
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
